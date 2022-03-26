@@ -6,7 +6,7 @@ The goal of this project is to build a Bicycle Rider Assisnatce System for Sam (
 
 **System Architecture:**
 
-STM32F429ZI MCU Dev board (on board gyro)
+STM32 MCU based Dev board with on-board Gyro and LCD
 
 External Wheel Speed sensor
 
