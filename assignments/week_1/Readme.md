@@ -17,8 +17,8 @@ On board push button (to reset the led)
 On board LCD to display speed, inclination and battery state to the rider
 
 
-![hw_bd](https://user-images.githubusercontent.com/65187998/160229346-a79d9970-1b5b-4dcc-9a92-dd0d988a36f9.png)
+![hw_bd](https://github.com/kambadur/making_embedded_systems/blob/main/assignments/week_1/hw_bd.png)
 
-![sw_bd](https://user-images.githubusercontent.com/65187998/160229357-e7e0bfbd-c0e3-41d8-b090-e6bef3f1e477.png)
+![sw_bd](https://github.com/kambadur/making_embedded_systems/blob/main/assignments/week_1/sw_bd.png)
 
-![hoc](https://user-images.githubusercontent.com/65187998/160229474-8f6646d7-68ee-480b-a9da-c0ab9c5b3232.png)
+![hoc](https://github.com/kambadur/making_embedded_systems/blob/main/assignments/week_1/hoc.png)
