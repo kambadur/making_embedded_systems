@@ -10,9 +10,10 @@ Draw the hardware block diagram for the board.
 For peripherals, note the communication paths (SPI, I2C, etc).
 |Peripheral      |Communication with MCU|
 |:-------------|:--------------------------|
-ST-LINK/V2-B|    JTAG|
-Push buttons (B1 and B2)|    GPIO|
-LEDs|            GPIO|
-USB- OTG|               |
-ST MEMS Gyroscope (I3G4250D)    I2C/SPI|
+|Embedded ST-LINK/V2-B|    JTAG|
+|Push buttons (B1, B2)|    GPIO|
+|LEDs|            GPIO|
+|SDRAM|         |
+|USB- OTG|               |
+|ST MEMS Gyroscope (I3G4250D)|    I2C/SPI|
 |2.4" QVGA TFT LCD|       Parallel interface|
