@@ -5,10 +5,12 @@
 For each board, look at the datasheet and getting started information for the board. 
 Draw the hardware block diagram for the board.
 
-![Dev board: Hardware block diagram](assets/hw_bd_stm32f4discovery.png)
+## Dev board: Hardware block diagram
+![](assets/hw_bd_stm32f4discovery.png)
 
 
 For peripherals, note the communication paths (SPI, I2C, etc).
+## Dev board: Peripherals
 |Peripheral      |Communication with MCU|
 |:-------------|:--------------------------|
 |Embedded ST-LINK/V2-B|    JTAG|
@@ -20,7 +22,7 @@ For peripherals, note the communication paths (SPI, I2C, etc).
 |2.4" QVGA TFT LCD|       Parallel interface|
 
 Look through the datasheet for the processor and other documents. Answer these questions: 
-
+## Processor related:
 * What kind of processor is it? 
 STM32F429ZIT6
 
