@@ -36,5 +36,5 @@ Look through the datasheet for the processor and other documents. Answer these q
     * ADC, DAC, CAN, TIMERS, USART, SDIO, SAI, DCMI 
 
 * If it has an ADC, what are the features?
-  
+### ADC features
 ![ADC features](assets/ADC_features.png)
