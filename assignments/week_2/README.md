@@ -26,14 +26,14 @@ For peripherals, note the communication paths (SPI, I2C, etc).
 Look through the datasheet for the processor and other documents. Answer these questions: 
 ### Processor related:
 * What kind of processor is it? 
-STM32F429ZIT6
+    STM32F429ZIT6
 
 * How much Flash and RAM does it have? Any other memory types? 
-2MB Flash and 256KB RAM
-4KB backup SRAM
+    2MB Flash and 256KB RAM
+    4KB backup SRAM
 
 * Does it have any special peripherals? (List 3-5 that you find interesting.
-ADC, DAC, CAN, TIMERS, USART, SDIO, SAI, DCMI 
+    ADC, DAC, CAN, TIMERS, USART, SDIO, SAI, DCMI 
 
 * If it has an ADC, what are the features?
   
