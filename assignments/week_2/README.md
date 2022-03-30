@@ -31,5 +31,6 @@ STM32F429ZIT6
 * Does it have any special peripherals? (List 3-5 that you find interesting.
 ADC, DAC, CAN, TIMERS, USART, SDIO, SAI, DCMI 
 
-* If it has an ADC, what are the features? 
+* If it has an ADC, what are the features?
+  
 ![ADC features](assets/ADC_features.png)
