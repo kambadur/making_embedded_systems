@@ -8,7 +8,7 @@ Draw the hardware block diagram for the board.
 ![Dev board: Hardware block diagram](assets/hw_bd_stm32f4discovery.png)
 
 For peripherals, note the communication paths (SPI, I2C, etc).
-|Peripheral|      |Communication with MCU|
+|Peripheral      |Communication with MCU|
 |:-------------|:--------------------------|
 ST-LINK/V2-B|    JTAG|
 Push buttons (B1 and B2)|    GPIO|
