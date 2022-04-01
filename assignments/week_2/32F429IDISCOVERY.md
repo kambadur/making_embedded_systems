@@ -15,7 +15,7 @@ For peripherals, note the communication paths (SPI, I2C, etc).
 ### Dev board: Peripherals
 |Peripheral      |Communication with MCU|
 |:-------------|:--------------------------|
-|Embedded ST-LINK/V2-B|    JTAG|
+|Embedded ST-LINK/V2-B|    SWD|
 |Push buttons (B1, B2)|    GPIO|
 |LEDs|            GPIO|
 |SDRAM|         |

@@ -15,7 +15,7 @@ For peripherals, note the communication paths (SPI, I2C, etc).
 ### Dev board: Peripherals
 |Peripheral      |Communication with MCU|
 |:-------------|:--------------------------|
-|PSoC 5LP Debugger/Programmer|    JTAG|
+|PSoC 5LP Debugger/Programmer|    SWD|
 |Reset button|    GPIO|
 |Status/Power LEDs|            GPIO|
 |F-RAM|   I2C      |
