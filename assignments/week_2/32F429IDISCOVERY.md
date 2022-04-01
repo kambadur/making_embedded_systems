@@ -38,7 +38,7 @@ Look through the datasheet for the processor and other documents. Answer these q
 * If it has an ADC, what are the features?
 ### ADC features
 ![ADC features](assets/ADC_features.png)  
-[Courtesy: ST]()
+[Courtesy: ST](st.com)
 
 ##### Board cost
 STM32F429I-DISC1: **$29.90** (Digikey).  
