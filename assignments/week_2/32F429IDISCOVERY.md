@@ -32,7 +32,7 @@ Look through the datasheet for the processor and other documents. Answer these q
     * 2MB Flash and 256KB RAM
     * 4KB backup SRAM
 
-* Does it have any special peripherals? (List 3-5 that you find interesting.
+* Does it have any special peripherals? (List 3-5 that you find interesting).
     * ADC, DAC, CAN, TIMERS, USART, SDIO, SAI, DCMI 
 
 * If it has an ADC, what are the features?
