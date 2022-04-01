@@ -8,7 +8,7 @@ Draw the hardware block diagram for the board.
 ## CY8CKIT-040
 
 ### Dev board: Hardware block diagram
-![](assets/hw_bd_cy8ckit-040.drawio)
+![](assets/hw_bd_cy8ckit-040.png)
 
 
 For peripherals, note the communication paths (SPI, I2C, etc).
