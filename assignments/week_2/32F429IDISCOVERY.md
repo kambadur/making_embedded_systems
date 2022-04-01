@@ -18,8 +18,8 @@ For peripherals, note the communication paths (SPI, I2C, etc).
 |Embedded ST-LINK/V2-B|    SWD|
 |Push buttons (B1, B2)|    GPIO|
 |LEDs|            GPIO|
-|SDRAM|         |
-|USB- OTG|               |
+|SDRAM|Flexible Memory Controller (FMC)         |
+|Micro USB| USB_OTG_FS (on the go full speed)               |
 |ST MEMS Gyroscope (I3G4250D)|    I2C/SPI|
 |2.4" QVGA TFT LCD|       Parallel interface|
 
