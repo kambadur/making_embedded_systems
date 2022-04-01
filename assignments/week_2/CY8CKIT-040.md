@@ -50,3 +50,12 @@ This component is only available when not using the CAPSENSE™ CSD block (CAPSE
 * End of Conversion (EOC) terminal provided for an optional interrupt
 
 [Courtesy: Infineon](https://www.infineon.com/cms/en/design-support/tools/sdk/psoc-software/psoc-4-components/psoc-4-voltage-adc-using-csd-hardware-csd-adc-version-1.0/?utm_source=cypress&utm_medium=referral&utm_campaign=202110_globe_en_all_integration-component_datasheet)
+
+##### Board cost
+CY8CKIT-040: $28.12 (Digikey)
+Stock available at various vendors around the globe.
+
+##### Processor cost
+USB to Serial processor ((CY8C5868LTI-LP039)): $24.31 (Digikey)
+Main core (CY8C4014LQI-422): $3.03 (Digikey)
+Both the processors are out of stock all over.
