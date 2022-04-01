@@ -50,4 +50,3 @@ This component is only available when not using the CAPSENSE™ CSD block (CAPSE
 * End of Conversion (EOC) terminal provided for an optional interrupt
 
 [Courtesy: Infineon](https://www.infineon.com/cms/en/design-support/tools/sdk/psoc-software/psoc-4-components/psoc-4-voltage-adc-using-csd-hardware-csd-adc-version-1.0/?utm_source=cypress&utm_medium=referral&utm_campaign=202110_globe_en_all_integration-component_datasheet)
-![ADC features](assets/ADC_features.png)
