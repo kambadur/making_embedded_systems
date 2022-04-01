@@ -18,10 +18,8 @@ For peripherals, note the communication paths (SPI, I2C, etc).
 |PSoC 5LP Debugger/Programmer|    SWD|
 |Reset button|    GPIO|
 |Status/Power LEDs|            GPIO|
-|F-RAM|   I2C      |
-|RGB LED|     PWM          |
-|ST MEMS Gyroscope (I3G4250D)|    I2C/SPI|
-|2.4" QVGA TFT LCD|       Parallel interface|
+|F-RAM (256 KB)|   I2C      |
+|RGB LED|     GPIO          |
 
 Look through the datasheet for the processor and other documents. Answer these questions: 
 ### Processor related:
@@ -29,11 +27,13 @@ Look through the datasheet for the processor and other documents. Answer these q
     * CY8C4014LQI-422
 
 * How much Flash and RAM does it have? Any other memory types? 
-    * 2MB Flash and 256KB RAM
-    * 4KB backup SRAM
+    * 16 KB of flash
+    * 2 KB of SRAM
+    * 4 KB of SROM (A supervisory ROM that contains boot and configuration routines
+        is provided.)
 
 * Does it have any special peripherals? (List 3-5 that you find interesting.
-    * ADC, DAC, CAN, TIMERS, USART, SDIO, SAI, DCMI 
+    * FRAM, PSoC 5LP debugger/Programmer, RGB Led, Proximity header
 
 * If it has an ADC, what are the features?
 ### ADC
