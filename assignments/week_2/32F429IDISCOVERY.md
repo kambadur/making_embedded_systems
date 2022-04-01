@@ -42,7 +42,7 @@ Look through the datasheet for the processor and other documents. Answer these q
 
 ##### Board cost
 STM32F429I-DISC1: **$29.90** (Digikey).  
-**Stock available at various vendors around the globe.**
+**Stock available at various vendors around.**
 
 ##### Processor cost
 USB to Serial processor ((CY8C5868LTI-LP039)): **$24.31** (Digikey).  

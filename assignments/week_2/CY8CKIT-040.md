@@ -32,7 +32,7 @@ Look through the datasheet for the processor and other documents. Answer these q
     * 4 KB of SROM (A supervisory ROM that contains boot and configuration routines
         is provided.)
 
-* Does it have any special peripherals? (List 3-5 that you find interesting.
+* Does it have any special peripherals? (List 3-5 that you find interesting).
     * FRAM, PSoC 5LP debugger/Programmer, RGB Led, Proximity header
 
 * If it has an ADC, what are the features?
@@ -50,7 +50,7 @@ Note: The CSD_ADC component uses resources from the PSoC 4 CapSense CSD block. T
 
 ##### Board cost
 CY8CKIT-040: **$28.12** (Digikey).  
-**Stock available at various vendors around the globe.**
+**Stock available at various vendors around.**
 
 ##### Processor cost
 USB to Serial processor ((CY8C5868LTI-LP039)): **$24.31** (Digikey).  
