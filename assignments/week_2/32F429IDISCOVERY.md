@@ -48,3 +48,6 @@ STM32F429I-DISC1: **$29.90** (Digikey).
 USB to Serial processor ((CY8C5868LTI-LP039)): **$24.31** (Digikey).  
 Main core (CY8C4014LQI-422): **$3.03** (Digikey).  
 **Both the processors are out of stock all over.**
+
+##### Application Note
+[AN3116 STM32 ADC modes and their applications](https://www.st.com/resource/en/application_note/an3116-stm32s-adc-modes-and-their-applications-stmicroelectronics.pdf)
