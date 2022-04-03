@@ -56,3 +56,6 @@ CY8CKIT-040: **$28.12** (Digikey).
 USB to Serial processor ((CY8C5868LTI-LP039)): **$24.31** (Digikey).  
 Main core (CY8C4014LQI-422): **$3.03** (Digikey).  
 **Both the processors are out of stock all over.**
+
+##### Application Note:
+[PSoc4 ADC using CSD Hardware](https://www.infineon.com/dgdl/Infineon-csd_adc_component_datasheet_1.0-Software%20Module%20Datasheets-v01_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0eb1e1dd2aed)
