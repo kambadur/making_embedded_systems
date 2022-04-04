@@ -15,8 +15,8 @@ Investigate further, using the processor manual:
 4. What are the registers that you read in order to find out the state of the button?
    1. ![GPIO_IDRREG](assets/Gpio_Idr_Reg.png)  
 5. Can you read the register directly and see the button change in a debugger or by printing out the value of the memory at the register’s address?
-   1. !(ButtonState_0)[assets/Debugger_buttonState_0.png]
-   2. !(ButtonState_1)[assets/Debugger_buttonState_1.png]
+   1. ![ButtonState_0](assets/Debugger_buttonState_0.png)
+   2. ![ButtonState_1](assets/Debugger_buttonState_1.png)
 
 
 For peripherals, note the communication paths (SPI, I2C, etc).
