@@ -18,15 +18,19 @@
 
    Base address of GPIOA:            0x40020000U  
    Offset address of GPIOx_MODER:    0x0U  
+   
         uint32_t* const pGpioAModeReg = (uint32_t*) (0x40020000U + 0x0U);  
-   * PA5 (Led) can now be set as output (as shown in the above image of GPIOx_MODER)  
+   PA5 (Led) can now be set as output (as shown in the above image of GPIOx_MODER)  
+
         *pGpioAModeReg |= (1<<10);	//set bit 10  
         *pGpioAModeReg &= ~(1<<11); 	//clear bit 11  
 
    Base address of GPIOC:            0x40020800U  
    Offset address of GPIOx_MODER:    0x0U  
+
         uint32_t* const pGpioCModeReg = (uint32_t*) (0x40020800U + 0x0U);  
-   * PC13 (button) can now be set as input (as shown in the above image of GPIOx_MODER)  
+   PC13 (button) can now be set as input (as shown in the above image of GPIOx_MODER)  
+   
         *pGpioCModeReg &= ~(3<<27); 		//clear bits 27, 26
 
 
@@ -36,8 +40,9 @@
    To turn the Led Off, write 0 to GPIOA pin 5 of ODR  
    Base address of GPIOA:            0x40020000U  
    Offset address of GPIOx_ODR:    0x14U  
-   uint32_t* const pGpioAOdrReg = (uint32_t*) (0x40020000U + 0x14U);  
    
+        uint32_t* const pGpioAOdrReg = (uint32_t*) (0x40020000U + 0x14U);  
+
         //Set PA5 (turn on led)  
         *pGpioAOdrReg  |= (1<<5);
 
