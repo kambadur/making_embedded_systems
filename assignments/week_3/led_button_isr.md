@@ -3,20 +3,20 @@
 ### Dev board: Hardware block diagram
 ![](assets/hw_bd_f401re.png)
 
-**1. What build environment are you using? **
+**1. What build environment are you using?**
    1. STM32CubeIDE
 **2. Can you step through the code to see what each line does?**
    1. Yes, in debugger perspective of IDE
 
 Investigate further, using the processor manual:  
-**3. What are the hardware registers that cause the LED to turn on and off? (From the processor manual, don’t worry about initialization.)**
-   1. ![GPIO_MODEREG](assets/Gpio_Mode_Reg.png)
-   2. ![GPIO_ODRREG](assets/Gpio_Odr_Reg.png)
-**4. What are the registers that you read in order to find out the state of the button?**
-   1. ![GPIO_IDRREG](assets/Gpio_Idr_Reg.png)  
-**5. Can you read the register directly and see the button change in a debugger or by printing out the value of the memory at the register’s address?**
-   1. ![ButtonState_0](assets/Debugger_buttonState_0.png)
-   2. ![ButtonState_1](assets/Debugger_buttonState_1.png)
+**3. What are the hardware registers that cause the LED to turn on and off? (From the processor manual, don’t worry about initialization.)**  
+   ![GPIO_MODEREG](assets/Gpio_Mode_Reg.png)  
+   ![GPIO_ODRREG](assets/Gpio_Odr_Reg.png)  
+**4. What are the registers that you read in order to find out the state of the button?**  
+   ![GPIO_IDRREG](assets/Gpio_Idr_Reg.png)  
+**5. Can you read the register directly and see the button change in a debugger or by printing out the value of the memory at the register’s address?**  
+   ![ButtonState_0](assets/Debugger_buttonState_0.png)  
+   ![ButtonState_1](assets/Debugger_buttonState_1.png)
 
 
 For peripherals, note the communication paths (SPI, I2C, etc).
