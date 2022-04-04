@@ -9,13 +9,18 @@
    1. Yes, in debugger perspective of IDE
 
 Investigate further, using the processor manual:  
+
 **3. What are the hardware registers that cause the LED to turn on and off? (From the processor manual, don’t worry about initialization.)**  
    ![GPIO_MODEREG](assets/Gpio_Mode_Reg.png)  
+
    ![GPIO_ODRREG](assets/Gpio_Odr_Reg.png)  
+   
 **4. What are the registers that you read in order to find out the state of the button?**  
    ![GPIO_IDRREG](assets/Gpio_Idr_Reg.png)  
+
 **5. Can you read the register directly and see the button change in a debugger or by printing out the value of the memory at the register’s address?**  
    ![ButtonState_0](assets/Debugger_buttonState_0.png)  
+
    ![ButtonState_1](assets/Debugger_buttonState_1.png)
 
 
