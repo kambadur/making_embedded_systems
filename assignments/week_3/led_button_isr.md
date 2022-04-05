@@ -69,12 +69,16 @@
 **5. Can you read the register directly and see the button change in a debugger or by printing out the value of the memory at the register’s address?**  
 Button pressed  
    ![ButtonState_0](assets/Debugger_buttonState_0.png)  
-   
+
 Button released  
    ![ButtonState_1](assets/Debugger_buttonState_1.png)
 
 
 ### Implementation
+On-board user button B1 to MCU via PC13 is configured to trigger interrupts on both press and release actions.  
+For both actions, a 50ms timer11 is used as debouncing.  
+After the debounce time elapse timer11 triggers an interrupt.  
+An ISR Callback function is written to ToggleLED which is on-board connected to MCU via PA5.  
 #### Add a button to turn the LED on and off. Button causes an interrupt. Debounce the button signal.  
 ##### **GPIO Configuration for button B1 and LED LD2**  
 Interrupt is configured on B1 for both Rising and Falling edjes, to react for both press and release events.  
