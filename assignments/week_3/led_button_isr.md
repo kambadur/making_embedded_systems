@@ -67,8 +67,10 @@
 
 
 **5. Can you read the register directly and see the button change in a debugger or by printing out the value of the memory at the register’s address?**  
+Button pressed  
    ![ButtonState_0](assets/Debugger_buttonState_0.png)  
-
+   
+Button released  
    ![ButtonState_1](assets/Debugger_buttonState_1.png)
 
 
