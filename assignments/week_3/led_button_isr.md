@@ -9,7 +9,7 @@
     Yes, in debugger perspective of IDE
 
 **3. What are the hardware registers that cause the LED to turn on and off? (From the processor manual, don’t worry about initialization.)**  
-   ![GPIO_MODEREG](assets/Gpio_Mode_Reg.png)  
+   ![GPIOx_MODER](assets/Gpio_Mode_Reg.png)  
    Mode register sets the direction of the pin  
    Set the port pin for Led as Output. (Led is connected to GPIOA Pin 5 on Nucleo F401RE board)  
    Set the port pin for user button as Input. (User button is connected to GPIOC Pin 13 on Nucleo F401RE board)  
@@ -23,7 +23,7 @@
    PA5 (Led) can now be set as output (as shown in the above image of GPIOx_MODER)  
 
         *pGpioAModeReg |= (1<<10);	//set bit 10  
-        *pGpioAModeReg &= ~(1<<11); 	//clear bit 11  
+        *pGpioAModeReg &= ~(1<<11); //clear bit 11  
 
    Base address of GPIOC:            0x40020800U  
    Offset address of GPIOx_MODER:    0x0U  
@@ -31,10 +31,10 @@
         uint32_t* const pGpioCModeReg = (uint32_t*) (0x40020800U + 0x0U);  
    PC13 (button) can now be set as input (as shown in the above image of GPIOx_MODER)  
    
-        *pGpioCModeReg &= ~(3<<27); 		//clear bits 27, 26
+        *pGpioCModeReg &= ~(3<<27); //clear bits 27, 26
 
 
-   ![GPIO_ODRREG](assets/Gpio_Odr_Reg.png)  
+   ![GPIOx_ODR](assets/Gpio_Odr_Reg.png)  
    Writing 1/0 to output data register changes the voltage level on the respective pin mapped to it.  
    To turn the Led On, write 1 to GPIOA pin 5 of ODR  
    To turn the Led Off, write 0 to GPIOA pin 5 of ODR  
@@ -51,7 +51,21 @@
 
 
 **4. What are the registers that you read in order to find out the state of the button?**  
-   ![GPIO_IDRREG](assets/Gpio_Idr_Reg.png)  
+   ![GPIOx_IDR](assets/Gpio_Idr_Reg.png)  
+   Other than RESERVED, every bit in the IDR register corresponds to a pin on the MCU.
+   Similar to MODE and ODR registers, tha base address of the GPIO port to which the button is connected is needed. Then adding the offset address of the IDR regsiter gives the right location in the memory map. Bit manipulation helps to read the correct bit (pin) of interest.  
+   Base address of GPIOC:            0x40020800U  
+   Offset address of GPIOx_IDR:    0x10U  
+
+        //GPIOC IDR Reg
+        uint32_t volatile * const pGpioCIdrReg = (uint32_t*) (0x40020800U + 0x10U);
+
+        //Read the status of pin PC13.
+        uint8_t pinState;
+        pinState = (uint8_t ) (*pGpioCIdrReg >> 13) & 1);  
+
+
+
 
 **5. Can you read the register directly and see the button change in a debugger or by printing out the value of the memory at the register’s address?**  
    ![ButtonState_0](assets/Debugger_buttonState_0.png)  
