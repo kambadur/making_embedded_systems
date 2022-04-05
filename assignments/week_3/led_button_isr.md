@@ -18,6 +18,7 @@
 
    Base address of GPIOA:            0x40020000U  
    Offset address of GPIOx_MODER:    0x0U  
+   [*The below code snippets are only for understanding. In the assignment, HAL abbstration is used.*]
    
         uint32_t* const pGpioAModeReg = (uint32_t*) (0x40020000U + 0x0U);  
    PA5 (Led) can now be set as output (as shown in the above image of GPIOx_MODER)  
@@ -65,8 +66,6 @@
         pinState = (uint8_t ) (*pGpioCIdrReg >> 13) & 1);  
 
 
-
-
 **5. Can you read the register directly and see the button change in a debugger or by printing out the value of the memory at the register’s address?**  
    ![ButtonState_0](assets/Debugger_buttonState_0.png)  
 
@@ -76,4 +75,10 @@
 ### Implementation
 #### Add a button to turn the LED on and off. 
 #### Button causes an interrupt. 
-#### Debounce the button signal.
+#### Debounce the button signal.  
+##### **GPIO Configuration for button B1**  
+Interrupt is configured on B1 for both Rising and Falling edjes, to react for both press and release events.  
+![STM32CubeIDE_GPIO_B1_Interrupt](assets/STM32CubeIDE_GPIO_B1_Interrupt.png)  
+
+##### **Code generation**  
+![STM32CubeIDE_CodeGen_GPIO_B1_Interrupt](assets/STM32CubeIDE_CodeGen_GPIO_B1_Interrupt.png)  
