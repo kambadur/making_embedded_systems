@@ -73,12 +73,17 @@
 
 
 ### Implementation
-#### Add a button to turn the LED on and off. 
-#### Button causes an interrupt. 
-#### Debounce the button signal.  
-##### **GPIO Configuration for button B1**  
+#### Add a button to turn the LED on and off. Button causes an interrupt. Debounce the button signal.  
+##### **GPIO Configuration for button B1 and LED LD2**  
 Interrupt is configured on B1 for both Rising and Falling edjes, to react for both press and release events.  
 ![STM32CubeIDE_GPIO_B1_Interrupt](assets/STM32CubeIDE_GPIO_B1_Interrupt.png)  
 
 ##### **Code generation**  
+In Rose: RCC enables clocks to the respective GPIOx peripherals.  
+In Red:  GPIO configuration for input button B1 [*macro expansion of Pin_B1 shows that it is defined as (uint16_t) 0x2000, which is bit 13*]  
+In Blue: GPIO configuration for output Led  
+In Black: EXTI interrupt has to be enabled in NVIC, otherwise interrupts doesn't get through to the Core.  
 ![STM32CubeIDE_CodeGen_GPIO_B1_Interrupt](assets/STM32CubeIDE_CodeGen_GPIO_B1_Interrupt.png)  
+
+##### **Button ISR Callback and Debouncing Timer**  
+![Button_ISRCallback_Debouncing](assets/Button_ISRCallback_Debouncing.png)  
