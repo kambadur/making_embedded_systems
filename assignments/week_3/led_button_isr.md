@@ -91,4 +91,4 @@ In Black: EXTI interrupt has to be enabled in NVIC, otherwise interrupts doesn't
 #### **Source file:**   [main.c](assets/main.c)  
 
 #### **Video**
-[Blinky](assets/nucleo-f401re_led_button_isr.mp4)
+[Blinky](https://youtu.be/Hkco_-mNeFA)
